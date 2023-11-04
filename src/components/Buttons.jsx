@@ -1,11 +1,11 @@
-import React from 'react'
+import React from "react";
 
-const Buttons = () => {
+const Buttons = ({ onClick, actionType }) => {
   return (
-    <div>
-      
-    </div>
-  )
-}
+    <button onClick={onClick}>
+      {actionType === "download" ? "Download" : "Share"}
+    </button>
+  );
+};
 
-export default Buttons
+export default Buttons;
